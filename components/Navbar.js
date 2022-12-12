@@ -13,7 +13,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className="flex bg-black w-full fixed top-[0] z-10    h-[80px] justify-between text-[#00D8FF] items-center flex-row  shadow-xl p-5">
+      <div className="flex shadow-cyan-900 bg-black w-full fixed top-[0] z-10    h-[80px] justify-between text-[#00D8FF] items-center flex-row  shadow-md p-5">
         <Link href="/" onClick={logohandler}>
           {" "}
           <img
@@ -24,13 +24,13 @@ const Navbar = () => {
         <div className="lg:flex cursor-pointer  flex-row space-x-12 mx-7 hidden">
           <Link
             href="/Aboutus"
-            className="hover:scale-125 hover:text-orange-400  ease-in duration-200 text-xl font-semibold"
+            className="hover:scale-125 hover:text-cyan-600  ease-in duration-200 text-xl font-semibold"
           >
             About
           </Link>
           <Link
             href="/Projects"
-            className="hover:scale-125 hover:text-orange-400  ease-in duration-200  text-xl font-semibold"
+            className="hover:scale-125 hover:text-cyan-600  ease-in duration-200  text-xl font-semibold"
           >
             Projects
           </Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
         </Link> */}
           <Link
             href="/Contactus"
-            className="hover:scale-125 hover:text-orange-400  ease-in duration-200  text-xl font-semibold"
+            className="hover:scale-125 hover:text-cyan-600  ease-in duration-200  text-xl font-semibold"
           >
             Contact
           </Link>

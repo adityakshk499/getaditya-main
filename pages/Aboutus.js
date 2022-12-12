@@ -1,11 +1,21 @@
 import React from "react";
 import {SiTailwindcss,SiHtml5,SiCss3,SiJavascript,SiReact,SiBootstrap} from "react-icons/si"
 import Card from "../components/Card";
-
+import Head from "next/head";
 
 const Aboutus = () => {
   return (
+    <>
+        <Head>
+        <link
+          rel="shortcut icon"
+          href="https://res.cloudinary.com/dbwc39val/image/upload/v1670838133/myportfolio/favicon_rnizwp.ico"
+        />
+        <title>About</title>
+      </Head>
+  
     <div className=" bg-black top-[80px] relative  w-full min-h-screen text-white p-3 pb-2   md:p-16  ">
+
       <div className='flex flex-col  space-y-10   '>
         <h1 className="text-[40px] border-b-2 text-[#006a91] bold">ABOUT</h1>
         <h2 className="text-[35px] text-[#00D8FF] font-semibold">Who I Am :</h2>
@@ -29,7 +39,7 @@ const Aboutus = () => {
             <Card><SiHtml5 className="mt-2 " color="#eb8740" size={40}/> <p>  HTML </p> </Card>
             <Card><SiCss3 className="mt-2 "  color="#004CE8" size={40}/> <p>  CSS </p> </Card>
             <Card><SiJavascript className="mt-2 "  color="#ffd600" size={40}/> <p>  Javascript </p> </Card>
-            <Card><SiTailwindcss className="mt-2 "  color="#06b6d4" size={40}/> <p>  Tailwind CSS </p> </Card>
+            <Card><SiTailwindcss className="mt-2 "  color="#06b6d4" size={40}/> <p>  Tailwind </p> </Card>
             <Card><SiReact className="mt-2 "  color="#61dbfb" size={40}/><p>  React </p> </Card>
             <Card><SiBootstrap className="mt-2 "  color="#7912f8" size={40}/><p>  Bootstrap </p> </Card>
             
@@ -40,6 +50,7 @@ const Aboutus = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

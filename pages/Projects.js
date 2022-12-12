@@ -1,8 +1,19 @@
 import React from "react";
 import Projectitem from "../components/Projectitem";
 import { Assets } from "../components/Assets";
+import Head from "next/head";
 const Projects = () => {
+
+  
   return (
+    <>
+    <Head>
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dbwc39val/image/upload/v1670838133/myportfolio/favicon_rnizwp.ico"
+    />
+    <title>Contact</title>
+  </Head>
     <div className=" bg-black top-[80px] relative w-full min-h-screen text-white p-3 pb-10   md:p-16  ">
       <div className="flex flex-col  space-y-10">
         <h1 className="text-[40px] border-b-2 text-[#006a91] bold">Projects</h1>
@@ -70,6 +81,7 @@ const Projects = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

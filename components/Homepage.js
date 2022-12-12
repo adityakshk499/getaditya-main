@@ -1,10 +1,14 @@
 import { FaLinkedinIn, FaGithub, FaWhatsapp, FaWpforms } from "react-icons/fa";
 import TypewriterComponent from "typewriter-effect";
 import Buttonrounded from "../components/Buttonrounded";
-
+import Head from "next/head";
 const Home = () => {
   return (
     <>
+    <Head>
+      <link rel="shortcut icon" href="https://res.cloudinary.com/dbwc39val/image/upload/v1670838133/myportfolio/favicon_rnizwp.ico"/>
+      <title>Home</title>
+    </Head>
         <div className="w-full relative  h-screen ">
         <video
           className="object-cover brightness-[30%]  h-screen w-full"
