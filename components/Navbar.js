@@ -85,18 +85,18 @@ const Navbar = () => {
           Contact
         </Link>
         <div className="flex w-full items-center justify-around flex-row">
-          <Buttonrounded>
-            <FaLinkedinIn color="white" size={30} />
-          </Buttonrounded>
-          <Buttonrounded>
-            <FaGithub color="#433f40" size={30} />
-          </Buttonrounded>
-          <Buttonrounded>
-            <FaWpforms color="black" size={30} />
-          </Buttonrounded>
-          <Buttonrounded>
-            <FaWhatsapp color="#13eb1e" size={30} />
-          </Buttonrounded>
+        <Buttonrounded link={'https://www.linkedin.com/in/aditya-kaushik-9a836a186/'} title={'Linkedin'}>
+              <FaLinkedinIn color="white" size={30} />
+            </Buttonrounded>
+            <Buttonrounded link={'https://github.com/adityakshk499'} title={'Github'}>
+              <FaGithub color="#433f40" size={30} />
+            </Buttonrounded>
+            <Buttonrounded link={'https://drive.google.com/file/d/1-4et_7JrwE50ptwBl1uw8fYEdp3MTzKx/view?usp=share_link'} title={"Resume"}>
+              <FaWpforms color="black" size={30} />
+            </Buttonrounded>
+            <Buttonrounded link={'https://api.whatsapp.com/send?phone=919897545121'} title={'Whatsapp'}> 
+              <FaWhatsapp  color="#13eb1e" size={30} />
+            </Buttonrounded>
         </div>
       </div>
     </>
