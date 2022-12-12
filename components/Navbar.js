@@ -13,7 +13,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className="flex bg-black w-full   h-fit justify-between text-[#00D8FF] items-center flex-row  shadow-xl p-5">
+      <div className="flex bg-black w-full fixed top-[0] z-10    h-[80px] justify-between text-[#00D8FF] items-center flex-row  shadow-xl p-5">
         <Link href="/" onClick={logohandler}>
           {" "}
           <img
