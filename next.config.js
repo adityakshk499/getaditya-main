@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash:true,
+  
 }
 
 module.exports = {
@@ -10,4 +11,7 @@ module.exports = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  images:{
+    unoptimized: true
+  }
 }

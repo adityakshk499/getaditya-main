@@ -13,11 +13,11 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className="flex shadow-cyan-900 bg-black w-full fixed top-[0] z-10    h-[80px] justify-between text-[#00D8FF] items-center flex-row  shadow-md p-5">
+      <div className="flex shadow-cyan-900 bg-black w-full fixed top-[0] z-10  h:[50px] md:h-[80px] justify-between text-[#00D8FF] items-center flex-row  shadow-sm p-3 md:p-5">
         <Link href="/" onClick={logohandler}>
           {" "}
           <img
-            className="w-40 md:w-56 h-fit"
+            className="w-24 md:w-48 h-fit"
             src="https://res.cloudinary.com/dbwc39val/image/upload/v1670688838/myportfolio/Aditya_kaushik-1_ijxnyw.png"
           />
         </Link>
@@ -46,9 +46,9 @@ const Navbar = () => {
         </div>
         <div className="lg:hidden">
           {nav === false ? (
-            <FaChevronDown size={30} onClick={navhandler} />
+            <FaChevronDown size={25} onClick={navhandler} />
           ) : (
-            <FaChevronUp size={30} onClick={navhandler} />
+            <FaChevronUp size={25} onClick={navhandler} />
           )}
         </div>
       </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
       <div
         className={
           nav === true
-            ? "z-10 flex lg:hidden pt-10 flex-col px-8   space-y-10  items-center h-full bg-black fixed text-[#00D8FF] top-[70px] w-full text-center"
+            ? "z-10 flex lg:hidden pt-10 flex-col px-8   space-y-10  items-center h-full bg-black fixed text-[#00D8FF] top-[40px] w-full text-center"
             : "hidden"
         }
       >
@@ -86,16 +86,16 @@ const Navbar = () => {
         </Link>
         <div className="flex w-full items-center justify-around flex-row">
         <Buttonrounded link={'https://www.linkedin.com/in/aditya-kaushik-9a836a186/'} title={'Linkedin'}>
-              <FaLinkedinIn color="white" size={30} />
+              <FaLinkedinIn color="white" size={25} />
             </Buttonrounded>
             <Buttonrounded link={'https://github.com/adityakshk499'} title={'Github'}>
-              <FaGithub color="#433f40" size={30} />
+              <FaGithub color="#433f40" size={25} />
             </Buttonrounded>
             <Buttonrounded link={'https://drive.google.com/file/d/1-4et_7JrwE50ptwBl1uw8fYEdp3MTzKx/view?usp=share_link'} title={"Resume"}>
-              <FaWpforms color="black" size={30} />
+              <FaWpforms color="black" size={25} />
             </Buttonrounded>
             <Buttonrounded link={'https://api.whatsapp.com/send?phone=919897545121'} title={'Whatsapp'}> 
-              <FaWhatsapp  color="#13eb1e" size={30} />
+              <FaWhatsapp  color="#13eb1e" size={25} />
             </Buttonrounded>
         </div>
       </div>

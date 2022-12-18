@@ -1,11 +1,32 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect } from "react";
 
 import { FaLinkedinIn, FaGithub, FaWhatsapp, FaWpforms } from "react-icons/fa";
 
 import Buttonrounded from "../components/Buttonrounded";
 
 const Contactus = () => {
+  function formSubmit(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    fetch("https://getform.io/f/575ea668-d576-4ef8-9fcd-8de09956fb14", {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {console.log(response)
+      document.getElementById('form').reset();}
+)
+      .catch((error) => console.log(error));
+  }
+  useEffect(() => {
+    const form = document.getElementById("form");
+    form.addEventListener("submit", formSubmit);
+  }, []);
+
   return (
     <>
       <Head>
@@ -15,12 +36,12 @@ const Contactus = () => {
         />
         <title>Contact</title>
       </Head>
-      <div className=" bg-black  relative top-[80px]  w-full min-h-screen text-white p-3    md:p-16  ">
+      <div className=" bg-black  relative top-[50px] md:top-[80px]  w-full min-h-screen text-white p-3    md:p-16  ">
         <div className="flex flex-col  space-y-5  ">
-          <h1 className="text-[40px] border-b-2 text-[#006a91] bold">
+          <h1 className="text-[30px] md:text-[40px] border-b-2 text-[#006a91] bold">
             CONTACT
           </h1>
-          <h2 className="text-[35px] text-[#00D8FF] font-semibold">
+          <h2 className="text-[25px] md:text-[35px] text-[#00D8FF] font-semibold">
             Get In Touch
           </h2>
 
@@ -30,18 +51,17 @@ const Contactus = () => {
           </h3>
           <p>Front-End Developer</p> */}
             <form
-              action="https://getform.io/f/575ea668-d576-4ef8-9fcd-8de09956fb14"
-              
               method="POST"
-              encType="multipart/form-data"
-              className="flex-col rounded-[10px] shadow-lg shadow-cyan-700 border-cyan-800 border p-3 md:p-10 text-[#00D8FF] w-full px-4 md:w-[40%] flex space-y-5 "
+              acceptCharset="UTF-8"
+              id="form"
+              className="flex-col rounded-[20px] shadow-lg shadow-cyan-700 border-cyan-800 border p-3 md:p-10 text-[#00D8FF] w-full   px-4 lg:w-[40%] flex space-y-5 "
             >
               <label>
                 Name:{" "}
                 <input
                   name="name"
-                  minlength="6"
-                  maxlength="20"
+                  minLength="6"
+                  maxLength="20"
                   required
                   className="focus:outline-none w-full text-[#00D8FF]  p-3 bg-gray-800  rounded-lg "
                   type="name"
@@ -62,8 +82,8 @@ const Contactus = () => {
                 Subject:{" "}
                 <input
                   name="subject"
-                  minlength="8"
-                  maxlength="28"
+                  minLength="8"
+                  maxLength="28"
                   required
                   className="focus:outline-none w-full bg-gray-800  p-3 rounded-lg text-[#00D8FF] "
                   type="text"
@@ -87,25 +107,43 @@ const Contactus = () => {
                 I am available for freelance or full-time positions. Contact me
                 and let's talk.
               </p>
-              <button className=" cursor-pointer hover:scale-105 ease-in duration-300 bg-gradient-to-r from-[#006a91] to-[#00D8FF] text-black rounded-lg p-3 hover:bg-cyan-600">
+              
+              <button
+                type="submit"
+                className=" cursor-pointer hover:scale-105 ease-in duration-300 bg-gradient-to-r from-[#006a91] to-[#00D8FF] text-black rounded-lg p-3 hover:bg-cyan-600"
+              >
                 Submit
               </button>
             </form>
 
             <p>CONNECT WITH ME</p>
             <div className="flex space-x-8 pb-5 flex-row">
-            <Buttonrounded link={'https://www.linkedin.com/in/aditya-kaushik-9a836a186/'} title={'Linkedin'}>
-              <FaLinkedinIn color="white" size={30} />
-            </Buttonrounded>
-            <Buttonrounded link={'https://github.com/adityakshk499'} title={'Github'}>
-              <FaGithub color="#433f40" size={30} />
-            </Buttonrounded>
-            <Buttonrounded link={'https://drive.google.com/file/d/1-4et_7JrwE50ptwBl1uw8fYEdp3MTzKx/view?usp=share_link'} title={"Resume"}>
-              <FaWpforms color="black" size={30} />
-            </Buttonrounded>
-            <Buttonrounded link={'https://api.whatsapp.com/send?phone=919897545121'} title={'Whatsapp'}> 
-              <FaWhatsapp  color="#13eb1e" size={30} />
-            </Buttonrounded>
+              <Buttonrounded
+                link={"https://www.linkedin.com/in/aditya-kaushik-9a836a186/"}
+                title={"Linkedin"}
+              >
+                <FaLinkedinIn color="white" size={25} />
+              </Buttonrounded>
+              <Buttonrounded
+                link={"https://github.com/adityakshk499"}
+                title={"Github"}
+              >
+                <FaGithub color="#433f40" size={25} />
+              </Buttonrounded>
+              <Buttonrounded
+                link={
+                  "https://drive.google.com/file/d/1-4et_7JrwE50ptwBl1uw8fYEdp3MTzKx/view?usp=share_link"
+                }
+                title={"Resume"}
+              >
+                <FaWpforms color="black" size={25} />
+              </Buttonrounded>
+              <Buttonrounded
+                link={"https://api.whatsapp.com/send?phone=919897545121"}
+                title={"Whatsapp"}
+              >
+                <FaWhatsapp color="#13eb1e" size={25} />
+              </Buttonrounded>
             </div>
           </div>
         </div>

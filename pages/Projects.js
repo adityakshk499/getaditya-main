@@ -14,10 +14,10 @@ const Projects = () => {
     />
     <title>Contact</title>
   </Head>
-    <div className=" bg-black top-[80px] relative w-full min-h-screen text-white p-3 pb-10   md:p-16  ">
+    <div className=" bg-black top-[50px] md:top-[80px] relative w-full min-h-screen text-white p-3 pb-10   md:p-16  ">
       <div className="flex flex-col  space-y-10">
-        <h1 className="text-[40px] border-b-2 text-[#006a91] bold">Projects</h1>
-        <h2 className="text-[35px] text-[#00D8FF] font-semibold">
+        <h1 className="text-[30px] md:text-[40px] border-b-2 text-[#006a91] bold">Projects</h1>
+        <h2 className="text-[25px] md:text-[35px] text-[#00D8FF] font-semibold">
           What I Have Done
         </h2>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
