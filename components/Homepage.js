@@ -2,7 +2,7 @@ import { FaLinkedinIn, FaGithub, FaWhatsapp, FaWpforms } from "react-icons/fa";
 import TypewriterComponent from "typewriter-effect";
 import Buttonrounded from "../components/Buttonrounded";
 import Head from "next/head";
-import Image from "next/image";
+
 const Home = () => {
   return (
     <>

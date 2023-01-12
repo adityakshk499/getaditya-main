@@ -36,7 +36,7 @@ const Contactus = () => {
         />
         <title>Contact</title>
       </Head>
-      <div className=" bg-black  relative top-[50px] md:top-[80px]  w-full min-h-screen text-white p-3    md:p-16  ">
+      <div className=" bg-black top-[50px] sm:top-[80px] relative  w-full min-h-screen text-white py-16 px-4 sm:px-16 ">
         <div className="flex flex-col  space-y-5  ">
           <h1 className="text-[30px] md:text-[40px] border-b-2 text-[#006a91] bold">
             CONTACT

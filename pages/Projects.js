@@ -12,11 +12,11 @@ const Projects = () => {
       rel="shortcut icon"
       href="https://res.cloudinary.com/dbwc39val/image/upload/v1670838133/myportfolio/favicon_rnizwp.ico"
     />
-    <title>Contact</title>
+    <title>PROJECT</title>
   </Head>
-    <div className=" bg-black top-[50px] md:top-[80px] relative w-full min-h-screen text-white p-3 pb-10   md:p-16  ">
+  <div className=" bg-black top-[50px] sm:top-[80px] relative  w-full min-h-screen text-white py-16 px-4 sm:px-16 ">
       <div className="flex flex-col  space-y-10">
-        <h1 className="text-[30px] md:text-[40px] border-b-2 text-[#006a91] bold">Projects</h1>
+        <h1 className="text-[30px] md:text-[40px] border-b-2 text-[#006a91] bold">PROJECTS</h1>
         <h2 className="text-[25px] md:text-[35px] text-[#00D8FF] font-semibold">
           What I Have Done
         </h2>

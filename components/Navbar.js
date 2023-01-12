@@ -3,6 +3,8 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Link from "next/link";
 import { FaLinkedinIn, FaGithub, FaWhatsapp, FaWpforms } from "react-icons/fa";
 import Buttonrounded from "./Buttonrounded";
+import Image from "next/image";
+
 const Navbar = () => {
   const [nav, setnav] = useState(false);
   function navhandler() {
@@ -13,12 +15,15 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className="flex shadow-cyan-900 bg-black w-full fixed top-[0] z-10  h:[50px] md:h-[80px] justify-between text-[#00D8FF] items-center flex-row  shadow-sm p-3 md:p-5">
+      <div className="flex shadow-cyan-900 bg-black w-full fixed top-[0] z-10  h:[50px] sm:h-[80px] justify-between text-[#00D8FF] items-center flex-row  shadow-sm p-3 md:p-5">
         <Link href="/" onClick={logohandler}>
           {" "}
-          <img
-            className="w-24 md:w-48 h-fit"
+          <Image
+            className="w-32 sm:w-48 h-fit"
+            width={150}
+            height={100}
             src="https://res.cloudinary.com/dbwc39val/image/upload/v1670688838/myportfolio/Aditya_kaushik-1_ijxnyw.png"
+            alt="logo"
           />
         </Link>
         <div className="lg:flex cursor-pointer  flex-row space-x-12 mx-7 hidden">
@@ -56,7 +61,7 @@ const Navbar = () => {
       <div
         className={
           nav === true
-            ? "z-10 flex lg:hidden pt-10 flex-col px-8   space-y-10  items-center h-full bg-black fixed text-[#00D8FF] top-[40px] w-full text-center"
+            ? "z-10 flex lg:hidden pt-10 flex-col px-8   space-y-10  items-center h-full bg-black fixed text-[#00D8FF] top-[49.5px] sm:top-[81px]  w-full text-center"
             : "hidden"
         }
       >

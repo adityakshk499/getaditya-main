@@ -14,12 +14,12 @@ const Aboutus = () => {
         <title>About</title>
       </Head>
   
-    <div className=" bg-black top-[50px] md:top-[80px] relative  w-full min-h-screen text-white p-3 pb-2   md:p-16  ">
+    <div className=" bg-black top-[50px] sm:top-[80px] relative  w-full min-h-screen text-white py-16 px-4 sm:px-16 ">
 
       <div className='flex flex-col  space-y-10   '>
         <h1 className="text-[30px] md:text-[40px] border-b-2 text-[#006a91] bold">ABOUT</h1>
         <h2 className="text-[25px] md:text-[35px] text-[#00D8FF] font-semibold">Who I Am </h2>
-        <h5 className="text-[15px] md:text-[22px] font-thin">
+        <h3 className="text-[15px] md:text-[22px] font-thin">
           I am ambitious and driven. I thrive on challenge and constantly set
           goals for myself, so I have something to strive towards. I’m not
           comfortable with settling, and I’m always looking for an opportunity
@@ -33,7 +33,7 @@ const Aboutus = () => {
           quick learner. I believe that being a great developer is not using one
           specific language, but choosing the best tool for the job. I started
           web developement in 2022. In my spare time I went to gym to keep my self fit.
-        </h5>
+        </h3>
         <h2 className='text-[25px] md:text-[35px] text-[#00D8FF] font-semibold'>Skills </h2>
         <div className="grid  grid-cols-3 gap-6 lg:grid-cols-6 lg:gap-10 w-full mb-5">
             <Card><SiHtml5 className="mt-2 " color="#eb8740" size={40}/> <p>  HTML </p> </Card>
