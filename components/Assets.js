@@ -1,5 +1,23 @@
 export const Assets = {
     projects:{
+        code91:{
+            name: 'CODE91 Website',
+            imagesrc:'https://res.cloudinary.com/dbwc39val/image/upload/v1697535806/code91_va0ewi.png',
+            technology: 'Next.Js,HTML,JS,Tailwind,Nodemaile,Node',
+            demo:'https://code91.co/'
+        },
+        pressplate:{
+            name: 'PressPlate Website',
+            imagesrc:'https://res.cloudinary.com/dbwc39val/image/upload/v1697535861/pressplate_t7vuxs.png',
+            technology: 'Next.Js,HTML,JS,Tailwind,Nodemaile,Node',
+            demo:'https://www.pressplate.in/'
+        },
+        foodiezz:{
+            name: 'Foodiez ',
+            imagesrc:'https://res.cloudinary.com/dbwc39val/image/upload/v1697535863/Screenshot_2023-10-17_151333_z2ohoy.png',
+            technology: 'React.Js,HTML,JS,Tailwind,Nodemailer,Node,MongoDb,Express',
+            demo:'https://foodiezz.vercel.app/'
+        },
         beach:{
             name: 'Travel layout',
             imagesrc:'https://res.cloudinary.com/dbwc39val/image/upload/v1670767937/myportfolio/beach_rcsics.png',

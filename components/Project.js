@@ -2,26 +2,37 @@ import React from "react";
 import Projectitem from "../components/Projectitem";
 import { Assets } from "../components/Assets";
 import Head from "next/head";
+import TextGradient from "./TextGradient";
 const Projects = () => {
 
   
   return (
     <>
-    <Head>
-    <link
-      rel="shortcut icon"
-      href="https://res.cloudinary.com/dbwc39val/image/upload/v1670838133/myportfolio/favicon_rnizwp.ico"
-    />
-    <title>PROJECT</title>
-  </Head>
-  <div className=" bg-black top-[50px] sm:top-[80px] relative  w-full min-h-screen text-white py-16 px-4 sm:px-16 ">
+   
+  <div className=" bg-black   w-full min-h-screen text-white  px-4 sm:px-16 ">
       <div className="flex flex-col  space-y-10">
-        <h1 className="text-[30px] md:text-[40px] border-b-2 text-[#006a91] bold">PROJECTS</h1>
-        <h2 className="text-[25px] md:text-[35px] text-[#00D8FF] font-semibold">
-          What I Have Done
-        </h2>
+        <h1 className="text-[30px] md:text-[40px] border-b-2 text-white bold">PROJECTS</h1>
+        <TextGradient>What I Have Done </TextGradient>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           {/* start from here */}
+          <Projectitem
+            nam={Assets.projects.code91.name}
+            imagesrc={Assets.projects.code91.imagesrc}
+            technology={Assets.projects.code91.technology}
+            demo={Assets.projects.code91.demo}
+          />
+           <Projectitem
+            nam={Assets.projects.pressplate.name}
+            imagesrc={Assets.projects.pressplate.imagesrc}
+            technology={Assets.projects.pressplate.technology}
+            demo={Assets.projects.pressplate.demo}
+          />
+           <Projectitem
+            nam={Assets.projects.foodiezz.name}
+            imagesrc={Assets.projects.foodiezz.imagesrc}
+            technology={Assets.projects.foodiezz.technology}
+            demo={Assets.projects.foodiezz.demo}
+          />
           <Projectitem
             nam={Assets.projects.weather.name}
             imagesrc={Assets.projects.weather.imagesrc}

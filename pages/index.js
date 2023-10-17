@@ -1,5 +1,8 @@
 import Homepage from "../components/Homepage";
 import Head from "next/head";
+import Projects from "../components/Project";
+import About from "../components/About";
+import Contact from "../components/Contact";
 export default function Home() {
   return (
     <>
@@ -14,7 +17,12 @@ export default function Home() {
         <meta name="googlebot" content="all" />
         <meta name="google-site-verification" content="l6wK3EPc0gZ0EflD72G_UMaqk8bBCxXcVjosYgObb_A" />
       </Head>
+      <div className="flex flex-col gap-24">
       <Homepage />
+      <About/>
+      <Projects/>
+      <Contact/>
+      </div>
     </>
   );
 }

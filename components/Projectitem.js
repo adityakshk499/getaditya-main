@@ -11,8 +11,9 @@ const Projectitem = ({ imagesrc, technology, demo, nam }) => {
           alt={nam}
           width={700}
           height={600}
-          // loading='lazy'
-          priority={true}
+          blur={true}
+          loading='lazy'
+          priority={false}
           quality={1}
         />
         <div className="hidden text-center group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">

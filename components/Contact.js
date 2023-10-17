@@ -1,11 +1,8 @@
 import Head from "next/head";
 import React, { useEffect } from "react";
+import TextGradient from "./TextGradient";
 
-import { FaLinkedinIn, FaGithub, FaWhatsapp, FaWpforms } from "react-icons/fa";
-
-import Buttonrounded from "../components/Buttonrounded";
-
-const Contactus = () => {
+const Contact = () => {
   function formSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -29,27 +26,18 @@ const Contactus = () => {
 
   return (
     <>
-      <Head>
-        <link
-          rel="shortcut icon"
-          href="https://res.cloudinary.com/dbwc39val/image/upload/v1670838133/myportfolio/favicon_rnizwp.ico"
-        />
-        <title>Contact</title>
-      </Head>
-      <div className=" bg-black top-[50px] sm:top-[80px] relative  w-full min-h-screen text-white py-16 px-4 sm:px-16 ">
+  
+      <div className=" bg-black   w-full min-h-screen text-white pb-16 px-4 sm:px-16 ">
         <div className="flex flex-col  space-y-5  ">
-          <h1 className="text-[30px] md:text-[40px] border-b-2 text-[#006a91] bold">
+          <h1 className="text-[30px] md:text-[40px] border-b-2 text-white bold">
             CONTACT
           </h1>
-          <h2 className="text-[25px] md:text-[35px] text-[#00D8FF] font-semibold">
+          <TextGradient >
             Get In Touch
-          </h2>
+          </TextGradient>
 
           <div className="flex  flex-col items-center   space-y-8 w-full   md:w-full ">
-            {/* <h3 className="text-[30px] text-left text-[#00D8FF] font-semibold ">
-            Aditya Kaushik
-          </h3>
-          <p>Front-End Developer</p> */}
+        
             <form
               method="POST"
               acceptCharset="UTF-8"
@@ -116,35 +104,7 @@ const Contactus = () => {
               </button>
             </form>
 
-            <p>CONNECT WITH ME</p>
-            <div className="flex space-x-8 pb-5 flex-row">
-              <Buttonrounded
-                link={"https://www.linkedin.com/in/aditya-kaushik-9a836a186/"}
-                title={"Linkedin"}
-              >
-                <FaLinkedinIn color="white" size={25} />
-              </Buttonrounded>
-              <Buttonrounded
-                link={"https://github.com/adityakshk499"}
-                title={"Github"}
-              >
-                <FaGithub color="#433f40" size={25} />
-              </Buttonrounded>
-              <Buttonrounded
-                link={
-                  "https://drive.google.com/file/d/1-4et_7JrwE50ptwBl1uw8fYEdp3MTzKx/view?usp=share_link"
-                }
-                title={"Resume"}
-              >
-                <FaWpforms color="black" size={25} />
-              </Buttonrounded>
-              <Buttonrounded
-                link={"https://api.whatsapp.com/send?phone=919897545121"}
-                title={"Whatsapp"}
-              >
-                <FaWhatsapp color="#13eb1e" size={25} />
-              </Buttonrounded>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -152,4 +112,4 @@ const Contactus = () => {
   );
 };
 
-export default Contactus;
+export default Contact;
